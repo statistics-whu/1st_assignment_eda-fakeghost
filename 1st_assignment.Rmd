@@ -98,7 +98,7 @@ newTable = lj %>% group_by(property_region) %>% reframe(property_name, property_
 
 # 探索性分析
 
-## 变量1的数值描述与图形
+## 探索平均房价和关注人的数量级关系
 
 ggplot(lj, aes(x = price_sqm, y = followers)) + geom_point() + geom_smooth()
 
@@ -107,54 +107,21 @@ ggplot(lj, aes(x = price_sqm, y = followers)) + geom_point() + geom_smooth()
 - 1w每平米的房子价格关注的人是最多的
 
 
-## 变量2的数值描述与图形
+## 总房价和关注人的数量级关系
 
-ggplot(lj, aes(x = price_sqm, y = followers)) + geom_point() + geom_smooth()
+ggplot(lj, aes(x = price_ttl, y = followers)) + geom_point() + geom_smooth()
 
-
-发现：
-
-- 发现1
-
-- 发现2
-
-## 变量...的数值描述与图形
 
 发现：
 
-- 发现1
+- 总价在100w左右每平方米价格在1w左右的房子是最受欢迎的
 
-- 发现2
+- 人们比较喜欢性价比较高的房子
 
-## 探索问题1
-
-发现：
-
-- 发现1
-
-- 发现2
-
-## 探索问题2
-
-发现：
-
-- 发现1
-
-- 发现2
-
-## 探索问题3
-
-发现：
-
-- 发现1
-
-- 发现2
-
----
 
 # 发现总结
 
-用1-3段话总结你的发现。
+整体上看，凡是靠近二环线的房价都整体偏高，1w每平米的房子价格关注的人是最多的，塔楼的受欢迎程度要高于板楼，总价在100w左右的房子是比较受欢迎的
 
 
 
